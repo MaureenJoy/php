@@ -2,12 +2,12 @@
 
 	
 	if(isset($_POST['Submit'])){
-		$logins = array('admin' => '123456','username1' => 'password1','username2' => 'password2');
+		$logins = array('user' => '*****','user1' => 'password1','user2' => 'password2');
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
 			$_SESSION['UserData']['Username']=$logins[$Username];
-			header("location:websiteko.html");
+			header("location:mj.html");
 			exit;
 		} else {
 		        $msg="<span class='spans'>Invalid Login Details</span>";
@@ -23,7 +23,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
-    <title>BigBuilders' Account</title>
+    <title>M Candle</title>
     <link rel="stylesheet" type="text/css" href="mjstyle.css">
 </head>
 
@@ -48,7 +48,7 @@
             </tr>
             <tr class="icon">
                 <td> <img src="user.png" alt="logo" /></td>
-                <td><img src="lock.png" alt="logo" /></td>
+   
 
             </tr>
 
