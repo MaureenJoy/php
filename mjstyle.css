@@ -761,7 +761,7 @@ ul li a:hover{
     border: thin;
     padding: 5px 5px;
     background-color:#9799ba;
-    color:#9799ba;
+    color:black;
     font-weight: 800;
     letter-spacing: 1px;
     width: 70px;
@@ -894,9 +894,9 @@ ul li a:hover{
     font-size: 13px;
     border-radius: 40%;
     padding: 5px 5px;
-    border-color:white;
+    border-color:black;
     background-color: #9799ba;
-    color:white;
+    color:black;
     font-weight:800;
     letter-spacing:1px;
     width:70px;
