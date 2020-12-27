@@ -63,7 +63,7 @@
         </form>
 <script>
 	function buttonFunction() {
-  location.replace('registration form.html')
+  location.replace('reg.html')
 }
 	</script>
 </body>
