@@ -24,7 +24,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
     <title>BigBuilders' Account</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="mjstyle.css">
 </head>
 
 <body class="loginbg">
@@ -43,8 +43,8 @@
         <?php } ?>
    
             <tr class="input">
-                <td>  <input  name="Username" type="text" placeholder="admin" name="awan" size="15" required> </td>
-                <td> <input name="Password" type="password" placeholder="123456" size="15" required></td>
+                <td>  <input  name="Username" type="text" placeholder="user" name="user" size="15" required> </td>
+                <td> <input name="Password" type="password" placeholder="*****" size="15" required></td>
             </tr>
             <tr class="icon">
                 <td> <img src="user.png" alt="logo" /></td>
