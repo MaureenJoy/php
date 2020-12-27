@@ -43,7 +43,7 @@
         <?php } ?>
    
             <tr class="input">
-                <td>  <input  name="Username" type="text" placeholder="username" name="     user"  size="15" required> </td>
+                <td>  <input  name="Username" type="text" placeholder="     username" name="user"  size="15" required> </td>
                 <td> <input name="Password" type="password" placeholder="     password" size="15" required></td>
             </tr>
             <tr class="icon">
