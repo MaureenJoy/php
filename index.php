@@ -1,66 +1,71 @@
+<?php session_start(); /* Starts the session */
+
+	
+	if(isset($_POST['Submit'])){
+		$logins = array('admin' => '123456','username1' => 'password1','username2' => 'password2');
+		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
+		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
+		if (isset($logins[$Username]) && $logins[$Username] == $Password){
+			$_SESSION['UserData']['Username']=$logins[$Username];
+			header("location:websiteko.html");
+			exit;
+		} else {
+		        $msg="<span class='spans'>Invalid Login Details</span>";
+		}
+	}
+	
+?>
+
 <!DOCTYPE HTML>
 
 <html>
 
 <head>
-
     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-witdh, initial scale=1">
-     <title>Registration Form</title>
-     <link rel="stylesheet" type="text/css" href="mjstyle.css">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>BigBuilders' Account</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body class="loginbg">  
- 
-  <form>
-      <div class="reg_form">
-          <div class="manbg1"> <img src="user.png" alt="logo" /></div>
-          <h1>CreateAccount</h1>
+<body class="loginbg">
+    
+        <table class="log_account">
+		 <form action="" method="post" name="Login_Form">
+        
+            <tr class="login">
+                <td class="manbg"> <img src="man-user.png" alt="logo" /></td> 
+            </tr>
+                 <td> <h7>Login</h7></td>
+			 <?php if(isset($msg)){?>
 
-          <div class="fields">
+        <?php echo $msg;?>
 
-              <div class="input2">
-                  <p>Username:</p>
-                  <p>EnterPassword:</p>
-                  <p>ConfirmPassword:</p>
-                  <p>EmailAddress:</p>
-                  <p>BirthDate:</p>
-                  <p>PhoneNumber:</p>
-                  <p>Country:</p>
-                  <p>Gender: </p>
-              </div>
+        <?php } ?>
+   
+            <tr class="input">
+                <td>  <input  name="Username" type="text" placeholder="admin" name="awan" size="15" required> </td>
+                <td> <input name="Password" type="password" placeholder="123456" size="15" required></td>
+            </tr>
+            <tr class="icon">
+                <td> <img src="user.png" alt="logo" /></td>
+                <td><img src="lock.png" alt="logo" /></td>
 
-              <div class="input3">
-                  <input type="text" placeholder="                 User" >
-                  <input type="password" placeholder="                *********" >
-                  <input type="password" placeholder="                *********" >
-                  <input type="text" placeholder="    example@gmail.com" >
-                  <input type="text" placeholder="              mm/dd/yy" >
-                  <input type="text" placeholder="             09** *** ****" >
-                  <input type="text" placeholder="            Philippines" >
-              </div>
-
-          </div>
-          <div class="gender">
-
-              <input type="radio" name="gender" data="male" required wrap>Male&emsp;&emsp;
-              <input type="radio" name="gender" data="female" required wrap>Female
-          </div>
+            </tr>
 
 
-          <div class="buttons1">
-              <button type="button" onclick="button2Function()">LogIn</button>
-              <button type="Submit">SignUp</button>
-          </div>
+            <tr class="buttons">
+                <td> <button type="Submit" name="Submit">Login</button></td>
+                <td> <button type="button" id="mybtn" onclick="buttonFunction()">Signup</button></td>
+            </tr>
 
-      </div>
+        </table>
 
-   </form>
-    <script>
-function button2Function() {
-  location.replace('index.php')
+        </form>
+<script>
+	function buttonFunction() {
+  location.replace('registration form.html')
 }
-</script>
+	</script>
 </body>
 
 </html>
