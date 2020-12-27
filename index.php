@@ -34,9 +34,9 @@
                   <input type="text" placeholder="                 User" >
                   <input type="password" placeholder="                *********" >
                   <input type="password" placeholder="                *********" >
-                  <input type="text" placeholder="  example@gmail.com" >
-                  <input type="text" placeholder="               mm/dd/yy" >
-                  <input type="text" placeholder="              09** *** ****" >
+                  <input type="text" placeholder="    example@gmail.com" >
+                  <input type="text" placeholder="              mm/dd/yy" >
+                  <input type="text" placeholder="             09** *** ****" >
                   <input type="text" placeholder="            Philippines" >
               </div>
 
