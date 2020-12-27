@@ -43,11 +43,11 @@
         <?php } ?>
    
             <tr class="input">
-                <td>  <input  name="Username" type="text" placeholder="user" name="user" size="15" required> </td>
-                <td> <input name="Password" type="password" placeholder="*****" size="15" required></td>
+                <td>  <input  name="Username" type="text" placeholder="     user" name="user" size="15" required> </td>
+                <td> <input name="Password" type="password" placeholder="     *****" size="15" required></td>
             </tr>
             <tr class="icon">
-                <td> <img src="user.png" alt="logo" /></td>
+                <td> <img src="user.png" /></td>
    
 
             </tr>
