@@ -771,7 +771,7 @@ ul li a:hover{
     }
 
 .buttons1 button:hover {
-    background-color: #ffb7b2;
+    background-color: #9799ba;
 }
 
 .buttons1 button:active {
@@ -835,7 +835,7 @@ ul li a:hover{
     height: 70px;
     width: 70px;
     border:2px solid;
-    background-color: rgba(103, 117, 157,1);
+    background-color: #9799ba;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -895,7 +895,7 @@ ul li a:hover{
     border-radius: 40%;
     padding: 5px 5px;
     border-color:white;
-    background-color: rgb(103, 117, 157);
+    background-color: #9799ba;
     color:white;
     font-weight:800;
     letter-spacing:1px;
@@ -905,7 +905,7 @@ ul li a:hover{
 }
 
     .buttons button:hover {
-        background-color: #A8AEE6;
+        background-color: #9799ba;
     }
     .buttons button:active {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
