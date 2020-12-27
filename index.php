@@ -2,7 +2,7 @@
 
 	
 	if(isset($_POST['Submit'])){
-		$logins = array('user' => '*****','user1' => 'password1','user2' => 'password2');
+		$logins = array('username' => 'password','username1' => 'password1','username2' => 'password2');
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
 		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
@@ -33,7 +33,7 @@
 		 <form action="" method="post" name="Login_Form">
         
             <tr class="login">
-                <td class="manbg"> <img src="man-user.png" alt="logo" /></td> 
+                <td class="manbg"> <img src="user.png" alt="logo" /></td> 
             </tr>
                  <td> <h7>Login</h7></td>
 			 <?php if(isset($msg)){?>
@@ -43,12 +43,12 @@
         <?php } ?>
    
             <tr class="input">
-                <td>  <input  name="Username" type="text" placeholder="     user" name="user" size="15" required> </td>
-                <td> <input name="Password" type="password" placeholder="     *****" size="15" required></td>
+                <td>  <input  name="Username" type="text" placeholder="   username" size="15" required> </td>
+                <td> <input name="Password" type="password" placeholder="   password" size="15" required></td>
             </tr>
             <tr class="icon">
-                <td> <img src="user.png" /></td>
-   
+                <td> <img src="user.png" alt="logo" /></td>
+                <td><img src="lock.png" alt="logo" /></td>
 
             </tr>
 
